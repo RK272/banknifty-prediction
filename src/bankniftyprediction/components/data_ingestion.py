@@ -1,6 +1,6 @@
 import os
 import urllib.request as request
-
+import shutil
 from bankniftyprediction.logging import logger
 from bankniftyprediction.utils.common import get_size
 from pathlib import Path
@@ -14,7 +14,7 @@ class DataIngestion:
     
     def move_file(self):
         if not os.path.exists(self.config.local_data_file):
-            create_directories([config.local_data_file])
+            #create_directories([config.local_data_file])
 
             N='/config/workspace/1RELIANCE.csv'
 
